@@ -391,6 +391,11 @@ img {
   padding: 12px;
 }
 
+.team-icon-circle:hover,
+.team-icon-circle:focus {
+  background-color: var(--pressed-state-color);
+}
+
 /* Customers */
 
 .customers-title {
@@ -399,9 +404,12 @@ img {
 
 .customers-list {
   display: flex;
+  gap: 24px;
 }
 
-/* не працює формула гепи флекс базіс */
+.customers-list.item {
+  justify-content: center;
+}
 
 .customer-icon-field {
   width: 168px;
@@ -410,9 +418,13 @@ img {
   border-color: var(--subtle-text-color);
   border-radius: 4px;
   padding: 16px 0;
-  text-align: center;
-  /* flex-basis: calc((100% - 5 * 24) / 6);
-  gap: 24;*/
+  justify-content: center;
+}
+
+.customer-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Portfolio */
