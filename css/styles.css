@@ -210,24 +210,25 @@ img {
 .social-media {
   display: flex;
   width: 208px;
-  gap: 16px;
-}
-
-.social-media-circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  text-align: center;
-  padding: 8px;
 }
 
 .social-media-circle:not(:last-child) {
   margin-right: 16px;
 }
 
-.social-media-circle:hover,
-.social-media-circle:focus {
+.footer-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
   background-color: var(--success-color);
 }
 
@@ -426,16 +427,26 @@ img {
 .customer-icon-field {
   width: 168px;
   height: 88px;
-  border: 1px solid;
-  border-color: var(--subtle-text-color);
-  border-radius: 4px;
-  padding: 16px 0;
 }
 
 .customer-icon-link {
+  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  border: 1px solid;
+  border-color: var(--subtle-text-color);
+  border-radius: 4px;
+}
+
+.customer-icon {
+  fill: inherit;
+}
+
+.customer-icon-link:hover,
+.customer-icon-link:focus {
+  color: var(--pressed-state-color);
 }
 
 /* Portfolio */
@@ -520,8 +531,8 @@ img {
   padding: 32px 0 32px 16px;
 }
 
-.work-card-bottom:hover,
-.work-card-bottom:focus {
+.work-card:hover,
+.work-card:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
