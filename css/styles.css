@@ -238,8 +238,7 @@ img {
 .hero {
   padding: 188px 0;
   text-align: center;
-  height: 600px;
-  max-width: 1600px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--dark-color);
@@ -314,8 +313,12 @@ img {
 .advantage-icon-field {
   margin-bottom: 8px;
   background-color: var(--light-color);
-  text-align: center;
-  padding: 24px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
 }
 
 /* What are we doing */
@@ -384,17 +387,30 @@ img {
 }
 
 .team-icon-circle {
-  background-color: var(--primary-brand-color);
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  padding: 12px;
+  display: flex;
 }
 
-.team-icon-circle:hover,
-.team-icon-circle:focus {
+.team-link {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 50%;
+  background-color: var(--primary-brand-color);
+}
+
+.team-link:hover,
+.team-link:focus {
   background-color: var(--pressed-state-color);
 }
+
+/* .team-icon-circle:hover,
+.team-icon-circle:focus {
+  background-color: var(--pressed-state-color);
+} */
 
 /* Customers */
 
@@ -407,10 +423,6 @@ img {
   gap: 24px;
 }
 
-.customers-list.item {
-  justify-content: center;
-}
-
 .customer-icon-field {
   width: 168px;
   height: 88px;
@@ -418,7 +430,6 @@ img {
   border-color: var(--subtle-text-color);
   border-radius: 4px;
   padding: 16px 0;
-  justify-content: center;
 }
 
 .customer-icon-link {
